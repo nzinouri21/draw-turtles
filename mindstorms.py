@@ -11,22 +11,42 @@ def draw_square():
     brad.color("blue")
     brad.speed(2)
 
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
+    i=0
+    while i<4:
+        brad.forward(100)
+        brad.right(90)
+        i=i+1
+    #window.exitonclick()
 
+def draw_circle():
+    window = turtle.Screen()
+    window.bgcolor("green")
+
+    #angie is another instance of a class called Turtle
     angie = turtle.Turtle()
     angie.shape("arrow")
     angie.color("yellow")
     angie.circle(100)
 
+    #window.exitonclick()
+
+def draw_triangle():
+    window = turtle.Screen()
+    window.bgcolor("red")
+
+    #angie is another instance of a class called Turtle
+    nazanin = turtle.Turtle()
+    nazanin.shape("circle")
+    nazanin.color("blue")
+
+    nazanin.forward(100)
+    nazanin.left(120)
+    nazanin.forward(100)
+    nazanin.left(120)
+    nazanin.forward(100)
+
     window.exitonclick()
 
-
-
 draw_square()
+draw_circle()
+draw_triangle()
